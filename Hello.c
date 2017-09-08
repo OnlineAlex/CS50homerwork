@@ -1,12 +1,18 @@
 #include <stdio.h>  // Для printf
 #include <string.h> // Для strtok
 #include <cs50.h>
+int caracter(string str);
 
 int main (void)
 {
-   string str = get_string();
-   char new1 = str[0];
-   printf ("%c", new1);
-   new1 = str[3];
-   printf ("%c\n", new1);
+   string key = "becon";
+   int intKey[strlen(key)];
+   for (int i = 0, ls = strlen(key); i < ls; i++)
+   {
+      intKey[i] = key[i]-97;
+   }
+   for (int i = 0; i < 5; i++)
+   {
+      printf("%i\n", intKey[i%3]);
+   }
 }
