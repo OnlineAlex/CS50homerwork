@@ -1,7 +1,6 @@
 #include <stdio.h>  // Для printf
 #include <string.h> // Для strtok
 #include <cs50.h>
-int caracter(string str);
 
 int main (void)
 {
@@ -13,6 +12,6 @@ int main (void)
    }
    for (int i = 0; i < 5; i++)
    {
-      printf("%i\n", intKey[i%3]);
+      printf("%i\n", intKey[i]);
    }
 }
